@@ -1,0 +1,739 @@
+{
+  "version": 1,
+  "appId": "billof-materials-optimizer",
+  "workflows": [
+    {
+      "id": "bom-intake-normalization",
+      "title": "BOM Intake and Normalization",
+      "description": "Import a local BOM, normalize part identifiers and units, and approve a controlled baseline for analysis.",
+      "fields": [
+        {
+          "key": "productReference",
+          "label": "Product reference",
+          "type": "text",
+          "required": true,
+          "default": "PRODUCT-DEMO-42"
+        },
+        {
+          "key": "bomRevision",
+          "label": "BOM revision",
+          "type": "text",
+          "required": true,
+          "default": "Rev C"
+        },
+        {
+          "key": "source",
+          "label": "Source",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Local CSV",
+            "Manual entry",
+            "Sandbox PLM adapter"
+          ],
+          "default": "Local CSV"
+        },
+        {
+          "key": "lineCount",
+          "label": "Line count",
+          "type": "number",
+          "required": true,
+          "default": 384
+        },
+        {
+          "key": "normalizationScore",
+          "label": "Normalization score",
+          "type": "number",
+          "required": true,
+          "default": 93
+        }
+      ],
+      "states": [
+        "received",
+        "normalizing",
+        "quality_review",
+        "baselined"
+      ],
+      "transitions": [
+        {
+          "id": "bom-intake-normalization-normalizing",
+          "label": "Move to normalizing",
+          "from": [
+            "received"
+          ],
+          "to": "normalizing"
+        },
+        {
+          "id": "bom-intake-normalization-quality_review",
+          "label": "Move to quality review",
+          "from": [
+            "normalizing"
+          ],
+          "to": "quality_review"
+        },
+        {
+          "id": "bom-intake-normalization-baselined",
+          "label": "Move to baselined",
+          "from": [
+            "quality_review"
+          ],
+          "to": "baselined"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "bom-intake-normalization-demo",
+          "state": "received",
+          "productReference": "PRODUCT-DEMO-42",
+          "bomRevision": "Rev C",
+          "source": "Local CSV",
+          "lineCount": 384,
+          "normalizationScore": 93
+        }
+      ]
+    },
+    {
+      "id": "component-cost-analysis",
+      "title": "Component Cost Analysis",
+      "description": "Calculate extended material cost, identify dominant drivers, and review cost-reduction opportunities.",
+      "fields": [
+        {
+          "key": "productReference",
+          "label": "Product reference",
+          "type": "text",
+          "required": true,
+          "default": "PRODUCT-DEMO-42"
+        },
+        {
+          "key": "annualVolume",
+          "label": "Annual production volume",
+          "type": "number",
+          "required": true,
+          "default": 12000
+        },
+        {
+          "key": "materialCostPerUnit",
+          "label": "Material cost per unit",
+          "type": "number",
+          "required": true,
+          "default": 418.75
+        },
+        {
+          "key": "topCostDriver",
+          "label": "Top cost driver",
+          "type": "text",
+          "required": true,
+          "default": "Power management module"
+        },
+        {
+          "key": "savingsOpportunity",
+          "label": "Estimated annual savings",
+          "type": "number",
+          "required": true,
+          "default": 186000
+        }
+      ],
+      "states": [
+        "calculating",
+        "analyzed",
+        "engineering_review",
+        "approved"
+      ],
+      "transitions": [
+        {
+          "id": "component-cost-analysis-analyzed",
+          "label": "Move to analyzed",
+          "from": [
+            "calculating"
+          ],
+          "to": "analyzed"
+        },
+        {
+          "id": "component-cost-analysis-engineering_review",
+          "label": "Move to engineering review",
+          "from": [
+            "analyzed"
+          ],
+          "to": "engineering_review"
+        },
+        {
+          "id": "component-cost-analysis-approved",
+          "label": "Move to approved",
+          "from": [
+            "engineering_review"
+          ],
+          "to": "approved"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "component-cost-analysis-demo",
+          "state": "calculating",
+          "productReference": "PRODUCT-DEMO-42",
+          "annualVolume": 12000,
+          "materialCostPerUnit": 418.75,
+          "topCostDriver": "Power management module",
+          "savingsOpportunity": 186000
+        }
+      ]
+    },
+    {
+      "id": "supplier-risk-validation",
+      "title": "Supplier Risk Validation",
+      "description": "Assess source concentration, capacity, quality, geopolitical, and commercial exposure for critical components.",
+      "fields": [
+        {
+          "key": "partNumber",
+          "label": "Part number",
+          "type": "text",
+          "required": true,
+          "default": "PMM-DEMO-881"
+        },
+        {
+          "key": "supplier",
+          "label": "Supplier",
+          "type": "text",
+          "required": true,
+          "default": "Demo Electronics Supplier"
+        },
+        {
+          "key": "singleSource",
+          "label": "Single source",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "default": "Yes"
+        },
+        {
+          "key": "riskLevel",
+          "label": "Risk level",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Low",
+            "Medium",
+            "High",
+            "Critical"
+          ],
+          "default": "High"
+        },
+        {
+          "key": "riskEvidence",
+          "label": "Risk evidence",
+          "type": "textarea",
+          "required": true,
+          "default": "Single qualified source with a 22-week quoted lead time."
+        }
+      ],
+      "states": [
+        "queued",
+        "screened",
+        "sourcing_review",
+        "resolved"
+      ],
+      "transitions": [
+        {
+          "id": "supplier-risk-validation-screened",
+          "label": "Move to screened",
+          "from": [
+            "queued"
+          ],
+          "to": "screened"
+        },
+        {
+          "id": "supplier-risk-validation-sourcing_review",
+          "label": "Move to sourcing review",
+          "from": [
+            "screened"
+          ],
+          "to": "sourcing_review"
+        },
+        {
+          "id": "supplier-risk-validation-resolved",
+          "label": "Move to resolved",
+          "from": [
+            "sourcing_review"
+          ],
+          "to": "resolved"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "supplier-risk-validation-demo",
+          "state": "queued",
+          "partNumber": "PMM-DEMO-881",
+          "supplier": "Demo Electronics Supplier",
+          "singleSource": "Yes",
+          "riskLevel": "High",
+          "riskEvidence": "Single qualified source with a 22-week quoted lead time."
+        }
+      ]
+    },
+    {
+      "id": "alternate-part-review",
+      "title": "Alternate Part Review",
+      "description": "Compare candidate substitutes across form, fit, function, compliance, quality, cost, and validation effort.",
+      "fields": [
+        {
+          "key": "currentPart",
+          "label": "Current part",
+          "type": "text",
+          "required": true,
+          "default": "PMM-DEMO-881"
+        },
+        {
+          "key": "alternatePart",
+          "label": "Alternate part",
+          "type": "text",
+          "required": true,
+          "default": "PMM-DEMO-992"
+        },
+        {
+          "key": "compatibility",
+          "label": "Compatibility",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Compatible",
+            "Needs validation",
+            "Not compatible"
+          ],
+          "default": "Needs validation"
+        },
+        {
+          "key": "unitSavings",
+          "label": "Unit savings",
+          "type": "number",
+          "required": true,
+          "default": 7.8
+        },
+        {
+          "key": "validationPlan",
+          "label": "Validation plan",
+          "type": "textarea",
+          "required": true,
+          "default": "Bench test thermal behavior and complete a pilot build of 30 units."
+        }
+      ],
+      "states": [
+        "proposed",
+        "engineering_review",
+        "quality_review",
+        "approved"
+      ],
+      "transitions": [
+        {
+          "id": "alternate-part-review-engineering_review",
+          "label": "Move to engineering review",
+          "from": [
+            "proposed"
+          ],
+          "to": "engineering_review"
+        },
+        {
+          "id": "alternate-part-review-quality_review",
+          "label": "Move to quality review",
+          "from": [
+            "engineering_review"
+          ],
+          "to": "quality_review"
+        },
+        {
+          "id": "alternate-part-review-approved",
+          "label": "Move to approved",
+          "from": [
+            "quality_review"
+          ],
+          "to": "approved"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "alternate-part-review-demo",
+          "state": "proposed",
+          "currentPart": "PMM-DEMO-881",
+          "alternatePart": "PMM-DEMO-992",
+          "compatibility": "Needs validation",
+          "unitSavings": 7.8,
+          "validationPlan": "Bench test thermal behavior and complete a pilot build of 30 units."
+        }
+      ]
+    },
+    {
+      "id": "obsolescence-lead-time-monitor",
+      "title": "Obsolescence and Lead-Time Monitor",
+      "description": "Track lifecycle notices and lead-time changes, assess production exposure, and approve mitigation actions.",
+      "fields": [
+        {
+          "key": "partNumber",
+          "label": "Part number",
+          "type": "text",
+          "required": true,
+          "default": "MCU-DEMO-120"
+        },
+        {
+          "key": "lifecycleStatus",
+          "label": "Lifecycle status",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Active",
+            "NRND",
+            "Last-time buy",
+            "Obsolete"
+          ],
+          "default": "NRND"
+        },
+        {
+          "key": "leadTimeWeeks",
+          "label": "Lead time weeks",
+          "type": "number",
+          "required": true,
+          "default": 28
+        },
+        {
+          "key": "inventoryCoverageWeeks",
+          "label": "Inventory coverage weeks",
+          "type": "number",
+          "required": true,
+          "default": 14
+        },
+        {
+          "key": "mitigation",
+          "label": "Mitigation",
+          "type": "textarea",
+          "required": true,
+          "default": "Qualify alternate MCU and evaluate a six-month bridge purchase."
+        }
+      ],
+      "states": [
+        "monitoring",
+        "alerted",
+        "mitigation_review",
+        "closed"
+      ],
+      "transitions": [
+        {
+          "id": "obsolescence-lead-time-monitor-alerted",
+          "label": "Move to alerted",
+          "from": [
+            "monitoring"
+          ],
+          "to": "alerted"
+        },
+        {
+          "id": "obsolescence-lead-time-monitor-mitigation_review",
+          "label": "Move to mitigation review",
+          "from": [
+            "alerted"
+          ],
+          "to": "mitigation_review"
+        },
+        {
+          "id": "obsolescence-lead-time-monitor-closed",
+          "label": "Move to closed",
+          "from": [
+            "mitigation_review"
+          ],
+          "to": "closed"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "obsolescence-lead-time-monitor-demo",
+          "state": "monitoring",
+          "partNumber": "MCU-DEMO-120",
+          "lifecycleStatus": "NRND",
+          "leadTimeWeeks": 28,
+          "inventoryCoverageWeeks": 14,
+          "mitigation": "Qualify alternate MCU and evaluate a six-month bridge purchase."
+        }
+      ]
+    },
+    {
+      "id": "make-buy-additive-review",
+      "title": "Make, Buy, and Additive Review",
+      "description": "Compare internal production, supplier purchase, and additive options using cost, capacity, quality, and schedule.",
+      "fields": [
+        {
+          "key": "partNumber",
+          "label": "Part number",
+          "type": "text",
+          "required": true,
+          "default": "BRKT-DEMO-48"
+        },
+        {
+          "key": "annualDemand",
+          "label": "Annual demand",
+          "type": "number",
+          "required": true,
+          "default": 3200
+        },
+        {
+          "key": "preferredOption",
+          "label": "Preferred option",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Make",
+            "Buy",
+            "Additive"
+          ],
+          "default": "Additive"
+        },
+        {
+          "key": "estimatedUnitCost",
+          "label": "Estimated unit cost",
+          "type": "number",
+          "required": true,
+          "default": 18.4
+        },
+        {
+          "key": "decisionRationale",
+          "label": "Decision rationale",
+          "type": "textarea",
+          "required": true,
+          "default": "Additive avoids tooling and supports the required low-volume geometry."
+        }
+      ],
+      "states": [
+        "modeled",
+        "operations_review",
+        "finance_review",
+        "approved"
+      ],
+      "transitions": [
+        {
+          "id": "make-buy-additive-review-operations_review",
+          "label": "Move to operations review",
+          "from": [
+            "modeled"
+          ],
+          "to": "operations_review"
+        },
+        {
+          "id": "make-buy-additive-review-finance_review",
+          "label": "Move to finance review",
+          "from": [
+            "operations_review"
+          ],
+          "to": "finance_review"
+        },
+        {
+          "id": "make-buy-additive-review-approved",
+          "label": "Move to approved",
+          "from": [
+            "finance_review"
+          ],
+          "to": "approved"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "make-buy-additive-review-demo",
+          "state": "modeled",
+          "partNumber": "BRKT-DEMO-48",
+          "annualDemand": 3200,
+          "preferredOption": "Additive",
+          "estimatedUnitCost": 18.4,
+          "decisionRationale": "Additive avoids tooling and supports the required low-volume geometry."
+        }
+      ]
+    },
+    {
+      "id": "change-approval-and-release",
+      "title": "Engineering Change Approval and Release",
+      "description": "Package BOM changes, quantify cost and yield impact, collect approvals, and release a traceable revision.",
+      "fields": [
+        {
+          "key": "changeReference",
+          "label": "Change reference",
+          "type": "text",
+          "required": true,
+          "default": "ECO-DEMO-017"
+        },
+        {
+          "key": "affectedRevision",
+          "label": "Affected revision",
+          "type": "text",
+          "required": true,
+          "default": "Rev C"
+        },
+        {
+          "key": "changeSummary",
+          "label": "Change summary",
+          "type": "textarea",
+          "required": true,
+          "default": "Replace the power module and update mounting hardware."
+        },
+        {
+          "key": "annualCostImpact",
+          "label": "Annual cost impact",
+          "type": "number",
+          "required": true,
+          "default": -142000
+        },
+        {
+          "key": "yieldImpactPercent",
+          "label": "Expected yield impact percent",
+          "type": "number",
+          "required": true,
+          "default": 1.2
+        }
+      ],
+      "states": [
+        "draft",
+        "cross_functional_review",
+        "approved",
+        "released"
+      ],
+      "transitions": [
+        {
+          "id": "change-approval-and-release-cross_functional_review",
+          "label": "Move to cross functional review",
+          "from": [
+            "draft"
+          ],
+          "to": "cross_functional_review"
+        },
+        {
+          "id": "change-approval-and-release-approved",
+          "label": "Move to approved",
+          "from": [
+            "cross_functional_review"
+          ],
+          "to": "approved"
+        },
+        {
+          "id": "change-approval-and-release-released",
+          "label": "Move to released",
+          "from": [
+            "approved"
+          ],
+          "to": "released"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "change-approval-and-release-demo",
+          "state": "draft",
+          "changeReference": "ECO-DEMO-017",
+          "affectedRevision": "Rev C",
+          "changeSummary": "Replace the power module and update mounting hardware.",
+          "annualCostImpact": -142000,
+          "yieldImpactPercent": 1.2
+        }
+      ]
+    },
+    {
+      "id": "erp-plm-integration-readiness",
+      "title": "ERP and PLM Integration Readiness",
+      "description": "Map BOM, item, supplier, cost, and change fields and verify adapters with local or sandbox fixtures.",
+      "fields": [
+        {
+          "key": "integrationType",
+          "label": "Integration type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "ERP",
+            "PLM",
+            "Supplier portal",
+            "Quality system"
+          ],
+          "default": "PLM"
+        },
+        {
+          "key": "provider",
+          "label": "Provider or adapter",
+          "type": "text",
+          "required": true,
+          "default": "Local PLM fixture"
+        },
+        {
+          "key": "environment",
+          "label": "Environment",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Local fixture",
+            "Sandbox configuration",
+            "Production configuration"
+          ],
+          "default": "Local fixture"
+        },
+        {
+          "key": "credentialStatus",
+          "label": "Credential status",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Not required for fixture",
+            "Missing",
+            "Stored externally"
+          ],
+          "default": "Not required for fixture"
+        },
+        {
+          "key": "testResult",
+          "label": "Test result",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Not run",
+            "Passed with fixture",
+            "Failed",
+            "Blocked"
+          ],
+          "default": "Not run"
+        }
+      ],
+      "states": [
+        "inventoried",
+        "mapped",
+        "test_ready",
+        "verified"
+      ],
+      "transitions": [
+        {
+          "id": "erp-plm-integration-readiness-mapped",
+          "label": "Move to mapped",
+          "from": [
+            "inventoried"
+          ],
+          "to": "mapped"
+        },
+        {
+          "id": "erp-plm-integration-readiness-test_ready",
+          "label": "Move to test ready",
+          "from": [
+            "mapped"
+          ],
+          "to": "test_ready"
+        },
+        {
+          "id": "erp-plm-integration-readiness-verified",
+          "label": "Move to verified",
+          "from": [
+            "test_ready"
+          ],
+          "to": "verified"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "erp-plm-integration-readiness-demo",
+          "state": "inventoried",
+          "integrationType": "PLM",
+          "provider": "Local PLM fixture",
+          "environment": "Local fixture",
+          "credentialStatus": "Not required for fixture",
+          "testResult": "Not run"
+        }
+      ]
+    }
+  ]
+}
