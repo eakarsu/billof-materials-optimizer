@@ -11,20 +11,20 @@
     "AICobotTrainer",
     "AISemiconductorFabYieldOptimizer"
   ],
-  "featureCount": 250,
-  "candidateFeatureCount": 311,
-  "eliminatedSimilarFeatures": 61,
-  "evidenceCount": 707,
+  "featureCount": 262,
+  "candidateFeatureCount": 327,
+  "eliminatedSimilarFeatures": 65,
+  "evidenceCount": 749,
   "aiPageCount": 0,
   "sourceAIPageCount": 0,
   "featureEvidencePolicy": "Existing source routes, pages, APIs, models, schemas, and navigation only",
   "optimizationPolicy": "Equivalent feature names are consolidated once per industry and assigned to one canonical app owner",
   "database": "database.sqlite",
   "databaseSeed": {
-    "seededProjects": 3,
-    "seededTables": 21,
-    "seededRows": 333
+    "seededProjects": 2,
+    "seededTables": 11,
+    "seededRows": 165
   },
-  "visibleFeatureCount": 34,
+  "visibleFeatureCount": 13,
   "featureVisibilityMode": "seeded-or-ai"
 }

@@ -82,13 +82,139 @@
       ],
       "seeds": [
         {
-          "id": "bom-intake-normalization-demo",
+          "id": "bom-intake-normalization-001",
           "state": "received",
-          "productReference": "PRODUCT-DEMO-42",
-          "bomRevision": "Rev C",
+          "productReference": "BILLOF-MAT-0001",
+          "bomRevision": "Rev C — North Region — North Region",
           "source": "Local CSV",
-          "lineCount": 384,
-          "normalizationScore": 93
+          "lineCount": 384.0,
+          "normalizationScore": 93.0
+        },
+        {
+          "id": "bom-intake-normalization-002",
+          "state": "received",
+          "productReference": "BILLOF-MAT-0002",
+          "bomRevision": "Rev C — Enterprise Account — Enterprise Account",
+          "source": "Manual entry",
+          "lineCount": 386.0,
+          "normalizationScore": 95.0
+        },
+        {
+          "id": "bom-intake-normalization-003",
+          "state": "received",
+          "productReference": "BILLOF-MAT-0003",
+          "bomRevision": "Rev C — Quarterly Cycle — Quarterly Cycle",
+          "source": "Sandbox PLM adapter",
+          "lineCount": 388.0,
+          "normalizationScore": 97.0
+        },
+        {
+          "id": "bom-intake-normalization-004",
+          "state": "received",
+          "productReference": "BILLOF-MAT-0004",
+          "bomRevision": "Rev C — Priority Queue — Priority Queue",
+          "source": "Local CSV",
+          "lineCount": 390.0,
+          "normalizationScore": 99.0
+        },
+        {
+          "id": "bom-intake-normalization-005",
+          "state": "received",
+          "productReference": "BILLOF-MAT-0005",
+          "bomRevision": "Rev C — Operations Review — Operations Review",
+          "source": "Manual entry",
+          "lineCount": 392.0,
+          "normalizationScore": 101.0
+        },
+        {
+          "id": "bom-intake-normalization-006",
+          "state": "received",
+          "productReference": "BILLOF-MAT-0006",
+          "bomRevision": "Rev C — Customer Request — Customer Request",
+          "source": "Sandbox PLM adapter",
+          "lineCount": 394.0,
+          "normalizationScore": 103.0
+        },
+        {
+          "id": "bom-intake-normalization-007",
+          "state": "received",
+          "productReference": "BILLOF-MAT-0007",
+          "bomRevision": "Rev C — Compliance Check — Compliance Check",
+          "source": "Local CSV",
+          "lineCount": 396.0,
+          "normalizationScore": 105.0
+        },
+        {
+          "id": "bom-intake-normalization-008",
+          "state": "received",
+          "productReference": "BILLOF-MAT-0008",
+          "bomRevision": "Rev C — Service Window — Service Window",
+          "source": "Manual entry",
+          "lineCount": 398.0,
+          "normalizationScore": 107.0
+        },
+        {
+          "id": "bom-intake-normalization-009",
+          "state": "received",
+          "productReference": "BILLOF-MAT-0009",
+          "bomRevision": "Rev C — Quality Sample — Quality Sample",
+          "source": "Sandbox PLM adapter",
+          "lineCount": 400.0,
+          "normalizationScore": 109.0
+        },
+        {
+          "id": "bom-intake-normalization-010",
+          "state": "received",
+          "productReference": "BILLOF-MAT-0010",
+          "bomRevision": "Rev C — Management Review — Management Review",
+          "source": "Local CSV",
+          "lineCount": 402.0,
+          "normalizationScore": 111.0
+        },
+        {
+          "id": "bom-intake-normalization-011",
+          "state": "received",
+          "productReference": "BILLOF-MAT-0011",
+          "bomRevision": "Rev C — Exception Follow-up — Exception Follow-up",
+          "source": "Manual entry",
+          "lineCount": 404.0,
+          "normalizationScore": 113.0
+        },
+        {
+          "id": "bom-intake-normalization-012",
+          "state": "received",
+          "productReference": "BILLOF-MAT-0012",
+          "bomRevision": "Rev C — Evidence Package — Evidence Package",
+          "source": "Sandbox PLM adapter",
+          "lineCount": 406.0,
+          "normalizationScore": 115.0
+        },
+        {
+          "id": "bom-intake-normalization-013",
+          "state": "received",
+          "productReference": "BILLOF-MAT-0013",
+          "bomRevision": "Rev C — Planning Cycle — Planning Cycle",
+          "source": "Local CSV",
+          "lineCount": 408.0,
+          "normalizationScore": 117.0
+        },
+        {
+          "id": "bom-intake-normalization-014",
+          "state": "received",
+          "productReference": "BILLOF-MAT-0014",
+          "bomRevision": "Rev C — Performance Review — Performance Review",
+          "source": "Manual entry",
+          "lineCount": 410.0,
+          "normalizationScore": 119.0
+        },
+        {
+          "id": "bom-intake-normalization-015",
+          "state": "received",
+          "productReference": "BILLOF-MAT-0015",
+          "bomRevision": "Rev C — Final Verification — Final Verification",
+          "source": "Sandbox PLM adapter",
+          "lineCount": 412.0,
+          "normalizationScore": 121.0
         }
       ]
     },
@@ -167,13 +293,139 @@
       ],
       "seeds": [
         {
-          "id": "component-cost-analysis-demo",
+          "id": "component-cost-analysis-001",
           "state": "calculating",
-          "productReference": "PRODUCT-DEMO-42",
-          "annualVolume": 12000,
+          "productReference": "BILLOF-MAT-0001",
+          "annualVolume": 12000.0,
           "materialCostPerUnit": 418.75,
-          "topCostDriver": "Power management module",
-          "savingsOpportunity": 186000
+          "topCostDriver": "Power management module — North Region — North Region",
+          "savingsOpportunity": 186000.0
+        },
+        {
+          "id": "component-cost-analysis-002",
+          "state": "calculating",
+          "productReference": "BILLOF-MAT-0002",
+          "annualVolume": 12002.0,
+          "materialCostPerUnit": 420.75,
+          "topCostDriver": "Power management module — Enterprise Account — Enterprise Account",
+          "savingsOpportunity": 186002.0
+        },
+        {
+          "id": "component-cost-analysis-003",
+          "state": "calculating",
+          "productReference": "BILLOF-MAT-0003",
+          "annualVolume": 12004.0,
+          "materialCostPerUnit": 422.75,
+          "topCostDriver": "Power management module — Quarterly Cycle — Quarterly Cycle",
+          "savingsOpportunity": 186004.0
+        },
+        {
+          "id": "component-cost-analysis-004",
+          "state": "calculating",
+          "productReference": "BILLOF-MAT-0004",
+          "annualVolume": 12006.0,
+          "materialCostPerUnit": 424.75,
+          "topCostDriver": "Power management module — Priority Queue — Priority Queue",
+          "savingsOpportunity": 186006.0
+        },
+        {
+          "id": "component-cost-analysis-005",
+          "state": "calculating",
+          "productReference": "BILLOF-MAT-0005",
+          "annualVolume": 12008.0,
+          "materialCostPerUnit": 426.75,
+          "topCostDriver": "Power management module — Operations Review — Operations Review",
+          "savingsOpportunity": 186008.0
+        },
+        {
+          "id": "component-cost-analysis-006",
+          "state": "calculating",
+          "productReference": "BILLOF-MAT-0006",
+          "annualVolume": 12010.0,
+          "materialCostPerUnit": 428.75,
+          "topCostDriver": "Power management module — Customer Request — Customer Request",
+          "savingsOpportunity": 186010.0
+        },
+        {
+          "id": "component-cost-analysis-007",
+          "state": "calculating",
+          "productReference": "BILLOF-MAT-0007",
+          "annualVolume": 12012.0,
+          "materialCostPerUnit": 430.75,
+          "topCostDriver": "Power management module — Compliance Check — Compliance Check",
+          "savingsOpportunity": 186012.0
+        },
+        {
+          "id": "component-cost-analysis-008",
+          "state": "calculating",
+          "productReference": "BILLOF-MAT-0008",
+          "annualVolume": 12014.0,
+          "materialCostPerUnit": 432.75,
+          "topCostDriver": "Power management module — Service Window — Service Window",
+          "savingsOpportunity": 186014.0
+        },
+        {
+          "id": "component-cost-analysis-009",
+          "state": "calculating",
+          "productReference": "BILLOF-MAT-0009",
+          "annualVolume": 12016.0,
+          "materialCostPerUnit": 434.75,
+          "topCostDriver": "Power management module — Quality Sample — Quality Sample",
+          "savingsOpportunity": 186016.0
+        },
+        {
+          "id": "component-cost-analysis-010",
+          "state": "calculating",
+          "productReference": "BILLOF-MAT-0010",
+          "annualVolume": 12018.0,
+          "materialCostPerUnit": 436.75,
+          "topCostDriver": "Power management module — Management Review — Management Review",
+          "savingsOpportunity": 186018.0
+        },
+        {
+          "id": "component-cost-analysis-011",
+          "state": "calculating",
+          "productReference": "BILLOF-MAT-0011",
+          "annualVolume": 12020.0,
+          "materialCostPerUnit": 438.75,
+          "topCostDriver": "Power management module — Exception Follow-up — Exception Follow-up",
+          "savingsOpportunity": 186020.0
+        },
+        {
+          "id": "component-cost-analysis-012",
+          "state": "calculating",
+          "productReference": "BILLOF-MAT-0012",
+          "annualVolume": 12022.0,
+          "materialCostPerUnit": 440.75,
+          "topCostDriver": "Power management module — Evidence Package — Evidence Package",
+          "savingsOpportunity": 186022.0
+        },
+        {
+          "id": "component-cost-analysis-013",
+          "state": "calculating",
+          "productReference": "BILLOF-MAT-0013",
+          "annualVolume": 12024.0,
+          "materialCostPerUnit": 442.75,
+          "topCostDriver": "Power management module — Planning Cycle — Planning Cycle",
+          "savingsOpportunity": 186024.0
+        },
+        {
+          "id": "component-cost-analysis-014",
+          "state": "calculating",
+          "productReference": "BILLOF-MAT-0014",
+          "annualVolume": 12026.0,
+          "materialCostPerUnit": 444.75,
+          "topCostDriver": "Power management module — Performance Review — Performance Review",
+          "savingsOpportunity": 186026.0
+        },
+        {
+          "id": "component-cost-analysis-015",
+          "state": "calculating",
+          "productReference": "BILLOF-MAT-0015",
+          "annualVolume": 12028.0,
+          "materialCostPerUnit": 446.75,
+          "topCostDriver": "Power management module — Final Verification — Final Verification",
+          "savingsOpportunity": 186028.0
         }
       ]
     },
@@ -262,13 +514,139 @@
       ],
       "seeds": [
         {
-          "id": "supplier-risk-validation-demo",
+          "id": "supplier-risk-validation-001",
           "state": "queued",
-          "partNumber": "PMM-DEMO-881",
-          "supplier": "Demo Electronics Supplier",
+          "partNumber": "BILLOF-MAT-0001",
+          "supplier": "Demo Electronics Supplier — North Region — North Region",
+          "singleSource": "Yes",
+          "riskLevel": "Low",
+          "riskEvidence": "Single qualified source with a 22-week quoted lead time. — North Region — North Region"
+        },
+        {
+          "id": "supplier-risk-validation-002",
+          "state": "queued",
+          "partNumber": "BILLOF-MAT-0002",
+          "supplier": "Demo Electronics Supplier — Enterprise Account — Enterprise Account",
+          "singleSource": "No",
+          "riskLevel": "Medium",
+          "riskEvidence": "Single qualified source with a 22-week quoted lead time. — Enterprise Account — Enterprise Account"
+        },
+        {
+          "id": "supplier-risk-validation-003",
+          "state": "queued",
+          "partNumber": "BILLOF-MAT-0003",
+          "supplier": "Demo Electronics Supplier — Quarterly Cycle — Quarterly Cycle",
           "singleSource": "Yes",
           "riskLevel": "High",
-          "riskEvidence": "Single qualified source with a 22-week quoted lead time."
+          "riskEvidence": "Single qualified source with a 22-week quoted lead time. — Quarterly Cycle — Quarterly Cycle"
+        },
+        {
+          "id": "supplier-risk-validation-004",
+          "state": "queued",
+          "partNumber": "BILLOF-MAT-0004",
+          "supplier": "Demo Electronics Supplier — Priority Queue — Priority Queue",
+          "singleSource": "No",
+          "riskLevel": "Critical",
+          "riskEvidence": "Single qualified source with a 22-week quoted lead time. — Priority Queue — Priority Queue"
+        },
+        {
+          "id": "supplier-risk-validation-005",
+          "state": "queued",
+          "partNumber": "BILLOF-MAT-0005",
+          "supplier": "Demo Electronics Supplier — Operations Review — Operations Review",
+          "singleSource": "Yes",
+          "riskLevel": "Low",
+          "riskEvidence": "Single qualified source with a 22-week quoted lead time. — Operations Review — Operations Review"
+        },
+        {
+          "id": "supplier-risk-validation-006",
+          "state": "queued",
+          "partNumber": "BILLOF-MAT-0006",
+          "supplier": "Demo Electronics Supplier — Customer Request — Customer Request",
+          "singleSource": "No",
+          "riskLevel": "Medium",
+          "riskEvidence": "Single qualified source with a 22-week quoted lead time. — Customer Request — Customer Request"
+        },
+        {
+          "id": "supplier-risk-validation-007",
+          "state": "queued",
+          "partNumber": "BILLOF-MAT-0007",
+          "supplier": "Demo Electronics Supplier — Compliance Check — Compliance Check",
+          "singleSource": "Yes",
+          "riskLevel": "High",
+          "riskEvidence": "Single qualified source with a 22-week quoted lead time. — Compliance Check — Compliance Check"
+        },
+        {
+          "id": "supplier-risk-validation-008",
+          "state": "queued",
+          "partNumber": "BILLOF-MAT-0008",
+          "supplier": "Demo Electronics Supplier — Service Window — Service Window",
+          "singleSource": "No",
+          "riskLevel": "Critical",
+          "riskEvidence": "Single qualified source with a 22-week quoted lead time. — Service Window — Service Window"
+        },
+        {
+          "id": "supplier-risk-validation-009",
+          "state": "queued",
+          "partNumber": "BILLOF-MAT-0009",
+          "supplier": "Demo Electronics Supplier — Quality Sample — Quality Sample",
+          "singleSource": "Yes",
+          "riskLevel": "Low",
+          "riskEvidence": "Single qualified source with a 22-week quoted lead time. — Quality Sample — Quality Sample"
+        },
+        {
+          "id": "supplier-risk-validation-010",
+          "state": "queued",
+          "partNumber": "BILLOF-MAT-0010",
+          "supplier": "Demo Electronics Supplier — Management Review — Management Review",
+          "singleSource": "No",
+          "riskLevel": "Medium",
+          "riskEvidence": "Single qualified source with a 22-week quoted lead time. — Management Review — Management Review"
+        },
+        {
+          "id": "supplier-risk-validation-011",
+          "state": "queued",
+          "partNumber": "BILLOF-MAT-0011",
+          "supplier": "Demo Electronics Supplier — Exception Follow-up — Exception Follow-up",
+          "singleSource": "Yes",
+          "riskLevel": "High",
+          "riskEvidence": "Single qualified source with a 22-week quoted lead time. — Exception Follow-up — Exception Follow-up"
+        },
+        {
+          "id": "supplier-risk-validation-012",
+          "state": "queued",
+          "partNumber": "BILLOF-MAT-0012",
+          "supplier": "Demo Electronics Supplier — Evidence Package — Evidence Package",
+          "singleSource": "No",
+          "riskLevel": "Critical",
+          "riskEvidence": "Single qualified source with a 22-week quoted lead time. — Evidence Package — Evidence Package"
+        },
+        {
+          "id": "supplier-risk-validation-013",
+          "state": "queued",
+          "partNumber": "BILLOF-MAT-0013",
+          "supplier": "Demo Electronics Supplier — Planning Cycle — Planning Cycle",
+          "singleSource": "Yes",
+          "riskLevel": "Low",
+          "riskEvidence": "Single qualified source with a 22-week quoted lead time. — Planning Cycle — Planning Cycle"
+        },
+        {
+          "id": "supplier-risk-validation-014",
+          "state": "queued",
+          "partNumber": "BILLOF-MAT-0014",
+          "supplier": "Demo Electronics Supplier — Performance Review — Performance Review",
+          "singleSource": "No",
+          "riskLevel": "Medium",
+          "riskEvidence": "Single qualified source with a 22-week quoted lead time. — Performance Review — Performance Review"
+        },
+        {
+          "id": "supplier-risk-validation-015",
+          "state": "queued",
+          "partNumber": "BILLOF-MAT-0015",
+          "supplier": "Demo Electronics Supplier — Final Verification — Final Verification",
+          "singleSource": "Yes",
+          "riskLevel": "High",
+          "riskEvidence": "Single qualified source with a 22-week quoted lead time. — Final Verification — Final Verification"
         }
       ]
     },
@@ -352,13 +730,139 @@
       ],
       "seeds": [
         {
-          "id": "alternate-part-review-demo",
+          "id": "alternate-part-review-001",
           "state": "proposed",
-          "currentPart": "PMM-DEMO-881",
-          "alternatePart": "PMM-DEMO-992",
-          "compatibility": "Needs validation",
+          "currentPart": "PMM-DEMO-881 — North Region — North Region",
+          "alternatePart": "PMM-DEMO-992 — North Region — North Region",
+          "compatibility": "Compatible",
           "unitSavings": 7.8,
-          "validationPlan": "Bench test thermal behavior and complete a pilot build of 30 units."
+          "validationPlan": "Bench test thermal behavior and complete a pilot build of 30 units. — North Region — North Region"
+        },
+        {
+          "id": "alternate-part-review-002",
+          "state": "proposed",
+          "currentPart": "PMM-DEMO-881 — Enterprise Account — Enterprise Account",
+          "alternatePart": "PMM-DEMO-992 — Enterprise Account — Enterprise Account",
+          "compatibility": "Needs validation",
+          "unitSavings": 9.8,
+          "validationPlan": "Bench test thermal behavior and complete a pilot build of 30 units. — Enterprise Account — Enterprise Account"
+        },
+        {
+          "id": "alternate-part-review-003",
+          "state": "proposed",
+          "currentPart": "PMM-DEMO-881 — Quarterly Cycle — Quarterly Cycle",
+          "alternatePart": "PMM-DEMO-992 — Quarterly Cycle — Quarterly Cycle",
+          "compatibility": "Not compatible",
+          "unitSavings": 11.8,
+          "validationPlan": "Bench test thermal behavior and complete a pilot build of 30 units. — Quarterly Cycle — Quarterly Cycle"
+        },
+        {
+          "id": "alternate-part-review-004",
+          "state": "proposed",
+          "currentPart": "PMM-DEMO-881 — Priority Queue — Priority Queue",
+          "alternatePart": "PMM-DEMO-992 — Priority Queue — Priority Queue",
+          "compatibility": "Compatible",
+          "unitSavings": 13.8,
+          "validationPlan": "Bench test thermal behavior and complete a pilot build of 30 units. — Priority Queue — Priority Queue"
+        },
+        {
+          "id": "alternate-part-review-005",
+          "state": "proposed",
+          "currentPart": "PMM-DEMO-881 — Operations Review — Operations Review",
+          "alternatePart": "PMM-DEMO-992 — Operations Review — Operations Review",
+          "compatibility": "Needs validation",
+          "unitSavings": 15.8,
+          "validationPlan": "Bench test thermal behavior and complete a pilot build of 30 units. — Operations Review — Operations Review"
+        },
+        {
+          "id": "alternate-part-review-006",
+          "state": "proposed",
+          "currentPart": "PMM-DEMO-881 — Customer Request — Customer Request",
+          "alternatePart": "PMM-DEMO-992 — Customer Request — Customer Request",
+          "compatibility": "Not compatible",
+          "unitSavings": 17.8,
+          "validationPlan": "Bench test thermal behavior and complete a pilot build of 30 units. — Customer Request — Customer Request"
+        },
+        {
+          "id": "alternate-part-review-007",
+          "state": "proposed",
+          "currentPart": "PMM-DEMO-881 — Compliance Check — Compliance Check",
+          "alternatePart": "PMM-DEMO-992 — Compliance Check — Compliance Check",
+          "compatibility": "Compatible",
+          "unitSavings": 19.8,
+          "validationPlan": "Bench test thermal behavior and complete a pilot build of 30 units. — Compliance Check — Compliance Check"
+        },
+        {
+          "id": "alternate-part-review-008",
+          "state": "proposed",
+          "currentPart": "PMM-DEMO-881 — Service Window — Service Window",
+          "alternatePart": "PMM-DEMO-992 — Service Window — Service Window",
+          "compatibility": "Needs validation",
+          "unitSavings": 21.8,
+          "validationPlan": "Bench test thermal behavior and complete a pilot build of 30 units. — Service Window — Service Window"
+        },
+        {
+          "id": "alternate-part-review-009",
+          "state": "proposed",
+          "currentPart": "PMM-DEMO-881 — Quality Sample — Quality Sample",
+          "alternatePart": "PMM-DEMO-992 — Quality Sample — Quality Sample",
+          "compatibility": "Not compatible",
+          "unitSavings": 23.8,
+          "validationPlan": "Bench test thermal behavior and complete a pilot build of 30 units. — Quality Sample — Quality Sample"
+        },
+        {
+          "id": "alternate-part-review-010",
+          "state": "proposed",
+          "currentPart": "PMM-DEMO-881 — Management Review — Management Review",
+          "alternatePart": "PMM-DEMO-992 — Management Review — Management Review",
+          "compatibility": "Compatible",
+          "unitSavings": 25.8,
+          "validationPlan": "Bench test thermal behavior and complete a pilot build of 30 units. — Management Review — Management Review"
+        },
+        {
+          "id": "alternate-part-review-011",
+          "state": "proposed",
+          "currentPart": "PMM-DEMO-881 — Exception Follow-up — Exception Follow-up",
+          "alternatePart": "PMM-DEMO-992 — Exception Follow-up — Exception Follow-up",
+          "compatibility": "Needs validation",
+          "unitSavings": 27.8,
+          "validationPlan": "Bench test thermal behavior and complete a pilot build of 30 units. — Exception Follow-up — Exception Follow-up"
+        },
+        {
+          "id": "alternate-part-review-012",
+          "state": "proposed",
+          "currentPart": "PMM-DEMO-881 — Evidence Package — Evidence Package",
+          "alternatePart": "PMM-DEMO-992 — Evidence Package — Evidence Package",
+          "compatibility": "Not compatible",
+          "unitSavings": 29.8,
+          "validationPlan": "Bench test thermal behavior and complete a pilot build of 30 units. — Evidence Package — Evidence Package"
+        },
+        {
+          "id": "alternate-part-review-013",
+          "state": "proposed",
+          "currentPart": "PMM-DEMO-881 — Planning Cycle — Planning Cycle",
+          "alternatePart": "PMM-DEMO-992 — Planning Cycle — Planning Cycle",
+          "compatibility": "Compatible",
+          "unitSavings": 31.8,
+          "validationPlan": "Bench test thermal behavior and complete a pilot build of 30 units. — Planning Cycle — Planning Cycle"
+        },
+        {
+          "id": "alternate-part-review-014",
+          "state": "proposed",
+          "currentPart": "PMM-DEMO-881 — Performance Review — Performance Review",
+          "alternatePart": "PMM-DEMO-992 — Performance Review — Performance Review",
+          "compatibility": "Needs validation",
+          "unitSavings": 33.8,
+          "validationPlan": "Bench test thermal behavior and complete a pilot build of 30 units. — Performance Review — Performance Review"
+        },
+        {
+          "id": "alternate-part-review-015",
+          "state": "proposed",
+          "currentPart": "PMM-DEMO-881 — Final Verification — Final Verification",
+          "alternatePart": "PMM-DEMO-992 — Final Verification — Final Verification",
+          "compatibility": "Not compatible",
+          "unitSavings": 35.8,
+          "validationPlan": "Bench test thermal behavior and complete a pilot build of 30 units. — Final Verification — Final Verification"
         }
       ]
     },
@@ -443,13 +947,139 @@
       ],
       "seeds": [
         {
-          "id": "obsolescence-lead-time-monitor-demo",
+          "id": "obsolescence-lead-time-monitor-001",
           "state": "monitoring",
-          "partNumber": "MCU-DEMO-120",
+          "partNumber": "BILLOF-MAT-0001",
+          "lifecycleStatus": "Active",
+          "leadTimeWeeks": 28.0,
+          "inventoryCoverageWeeks": 14.0,
+          "mitigation": "Qualify alternate MCU and evaluate a six-month bridge purchase. — North Region — North Region"
+        },
+        {
+          "id": "obsolescence-lead-time-monitor-002",
+          "state": "monitoring",
+          "partNumber": "BILLOF-MAT-0002",
           "lifecycleStatus": "NRND",
-          "leadTimeWeeks": 28,
-          "inventoryCoverageWeeks": 14,
-          "mitigation": "Qualify alternate MCU and evaluate a six-month bridge purchase."
+          "leadTimeWeeks": 30.0,
+          "inventoryCoverageWeeks": 16.0,
+          "mitigation": "Qualify alternate MCU and evaluate a six-month bridge purchase. — Enterprise Account — Enterprise Account"
+        },
+        {
+          "id": "obsolescence-lead-time-monitor-003",
+          "state": "monitoring",
+          "partNumber": "BILLOF-MAT-0003",
+          "lifecycleStatus": "Last-time buy",
+          "leadTimeWeeks": 32.0,
+          "inventoryCoverageWeeks": 18.0,
+          "mitigation": "Qualify alternate MCU and evaluate a six-month bridge purchase. — Quarterly Cycle — Quarterly Cycle"
+        },
+        {
+          "id": "obsolescence-lead-time-monitor-004",
+          "state": "monitoring",
+          "partNumber": "BILLOF-MAT-0004",
+          "lifecycleStatus": "Obsolete",
+          "leadTimeWeeks": 34.0,
+          "inventoryCoverageWeeks": 20.0,
+          "mitigation": "Qualify alternate MCU and evaluate a six-month bridge purchase. — Priority Queue — Priority Queue"
+        },
+        {
+          "id": "obsolescence-lead-time-monitor-005",
+          "state": "monitoring",
+          "partNumber": "BILLOF-MAT-0005",
+          "lifecycleStatus": "Active",
+          "leadTimeWeeks": 36.0,
+          "inventoryCoverageWeeks": 22.0,
+          "mitigation": "Qualify alternate MCU and evaluate a six-month bridge purchase. — Operations Review — Operations Review"
+        },
+        {
+          "id": "obsolescence-lead-time-monitor-006",
+          "state": "monitoring",
+          "partNumber": "BILLOF-MAT-0006",
+          "lifecycleStatus": "NRND",
+          "leadTimeWeeks": 38.0,
+          "inventoryCoverageWeeks": 24.0,
+          "mitigation": "Qualify alternate MCU and evaluate a six-month bridge purchase. — Customer Request — Customer Request"
+        },
+        {
+          "id": "obsolescence-lead-time-monitor-007",
+          "state": "monitoring",
+          "partNumber": "BILLOF-MAT-0007",
+          "lifecycleStatus": "Last-time buy",
+          "leadTimeWeeks": 40.0,
+          "inventoryCoverageWeeks": 26.0,
+          "mitigation": "Qualify alternate MCU and evaluate a six-month bridge purchase. — Compliance Check — Compliance Check"
+        },
+        {
+          "id": "obsolescence-lead-time-monitor-008",
+          "state": "monitoring",
+          "partNumber": "BILLOF-MAT-0008",
+          "lifecycleStatus": "Obsolete",
+          "leadTimeWeeks": 42.0,
+          "inventoryCoverageWeeks": 28.0,
+          "mitigation": "Qualify alternate MCU and evaluate a six-month bridge purchase. — Service Window — Service Window"
+        },
+        {
+          "id": "obsolescence-lead-time-monitor-009",
+          "state": "monitoring",
+          "partNumber": "BILLOF-MAT-0009",
+          "lifecycleStatus": "Active",
+          "leadTimeWeeks": 44.0,
+          "inventoryCoverageWeeks": 30.0,
+          "mitigation": "Qualify alternate MCU and evaluate a six-month bridge purchase. — Quality Sample — Quality Sample"
+        },
+        {
+          "id": "obsolescence-lead-time-monitor-010",
+          "state": "monitoring",
+          "partNumber": "BILLOF-MAT-0010",
+          "lifecycleStatus": "NRND",
+          "leadTimeWeeks": 46.0,
+          "inventoryCoverageWeeks": 32.0,
+          "mitigation": "Qualify alternate MCU and evaluate a six-month bridge purchase. — Management Review — Management Review"
+        },
+        {
+          "id": "obsolescence-lead-time-monitor-011",
+          "state": "monitoring",
+          "partNumber": "BILLOF-MAT-0011",
+          "lifecycleStatus": "Last-time buy",
+          "leadTimeWeeks": 48.0,
+          "inventoryCoverageWeeks": 34.0,
+          "mitigation": "Qualify alternate MCU and evaluate a six-month bridge purchase. — Exception Follow-up — Exception Follow-up"
+        },
+        {
+          "id": "obsolescence-lead-time-monitor-012",
+          "state": "monitoring",
+          "partNumber": "BILLOF-MAT-0012",
+          "lifecycleStatus": "Obsolete",
+          "leadTimeWeeks": 50.0,
+          "inventoryCoverageWeeks": 36.0,
+          "mitigation": "Qualify alternate MCU and evaluate a six-month bridge purchase. — Evidence Package — Evidence Package"
+        },
+        {
+          "id": "obsolescence-lead-time-monitor-013",
+          "state": "monitoring",
+          "partNumber": "BILLOF-MAT-0013",
+          "lifecycleStatus": "Active",
+          "leadTimeWeeks": 52.0,
+          "inventoryCoverageWeeks": 38.0,
+          "mitigation": "Qualify alternate MCU and evaluate a six-month bridge purchase. — Planning Cycle — Planning Cycle"
+        },
+        {
+          "id": "obsolescence-lead-time-monitor-014",
+          "state": "monitoring",
+          "partNumber": "BILLOF-MAT-0014",
+          "lifecycleStatus": "NRND",
+          "leadTimeWeeks": 54.0,
+          "inventoryCoverageWeeks": 40.0,
+          "mitigation": "Qualify alternate MCU and evaluate a six-month bridge purchase. — Performance Review — Performance Review"
+        },
+        {
+          "id": "obsolescence-lead-time-monitor-015",
+          "state": "monitoring",
+          "partNumber": "BILLOF-MAT-0015",
+          "lifecycleStatus": "Last-time buy",
+          "leadTimeWeeks": 56.0,
+          "inventoryCoverageWeeks": 42.0,
+          "mitigation": "Qualify alternate MCU and evaluate a six-month bridge purchase. — Final Verification — Final Verification"
         }
       ]
     },
@@ -533,13 +1163,139 @@
       ],
       "seeds": [
         {
-          "id": "make-buy-additive-review-demo",
+          "id": "make-buy-additive-review-001",
           "state": "modeled",
-          "partNumber": "BRKT-DEMO-48",
-          "annualDemand": 3200,
-          "preferredOption": "Additive",
+          "partNumber": "BILLOF-MAT-0001",
+          "annualDemand": 3200.0,
+          "preferredOption": "Make",
           "estimatedUnitCost": 18.4,
-          "decisionRationale": "Additive avoids tooling and supports the required low-volume geometry."
+          "decisionRationale": "Additive avoids tooling and supports the required low-volume geometry. — North Region — North Region"
+        },
+        {
+          "id": "make-buy-additive-review-002",
+          "state": "modeled",
+          "partNumber": "BILLOF-MAT-0002",
+          "annualDemand": 3202.0,
+          "preferredOption": "Buy",
+          "estimatedUnitCost": 20.4,
+          "decisionRationale": "Additive avoids tooling and supports the required low-volume geometry. — Enterprise Account — Enterprise Account"
+        },
+        {
+          "id": "make-buy-additive-review-003",
+          "state": "modeled",
+          "partNumber": "BILLOF-MAT-0003",
+          "annualDemand": 3204.0,
+          "preferredOption": "Additive",
+          "estimatedUnitCost": 22.4,
+          "decisionRationale": "Additive avoids tooling and supports the required low-volume geometry. — Quarterly Cycle — Quarterly Cycle"
+        },
+        {
+          "id": "make-buy-additive-review-004",
+          "state": "modeled",
+          "partNumber": "BILLOF-MAT-0004",
+          "annualDemand": 3206.0,
+          "preferredOption": "Make",
+          "estimatedUnitCost": 24.4,
+          "decisionRationale": "Additive avoids tooling and supports the required low-volume geometry. — Priority Queue — Priority Queue"
+        },
+        {
+          "id": "make-buy-additive-review-005",
+          "state": "modeled",
+          "partNumber": "BILLOF-MAT-0005",
+          "annualDemand": 3208.0,
+          "preferredOption": "Buy",
+          "estimatedUnitCost": 26.4,
+          "decisionRationale": "Additive avoids tooling and supports the required low-volume geometry. — Operations Review — Operations Review"
+        },
+        {
+          "id": "make-buy-additive-review-006",
+          "state": "modeled",
+          "partNumber": "BILLOF-MAT-0006",
+          "annualDemand": 3210.0,
+          "preferredOption": "Additive",
+          "estimatedUnitCost": 28.4,
+          "decisionRationale": "Additive avoids tooling and supports the required low-volume geometry. — Customer Request — Customer Request"
+        },
+        {
+          "id": "make-buy-additive-review-007",
+          "state": "modeled",
+          "partNumber": "BILLOF-MAT-0007",
+          "annualDemand": 3212.0,
+          "preferredOption": "Make",
+          "estimatedUnitCost": 30.4,
+          "decisionRationale": "Additive avoids tooling and supports the required low-volume geometry. — Compliance Check — Compliance Check"
+        },
+        {
+          "id": "make-buy-additive-review-008",
+          "state": "modeled",
+          "partNumber": "BILLOF-MAT-0008",
+          "annualDemand": 3214.0,
+          "preferredOption": "Buy",
+          "estimatedUnitCost": 32.4,
+          "decisionRationale": "Additive avoids tooling and supports the required low-volume geometry. — Service Window — Service Window"
+        },
+        {
+          "id": "make-buy-additive-review-009",
+          "state": "modeled",
+          "partNumber": "BILLOF-MAT-0009",
+          "annualDemand": 3216.0,
+          "preferredOption": "Additive",
+          "estimatedUnitCost": 34.4,
+          "decisionRationale": "Additive avoids tooling and supports the required low-volume geometry. — Quality Sample — Quality Sample"
+        },
+        {
+          "id": "make-buy-additive-review-010",
+          "state": "modeled",
+          "partNumber": "BILLOF-MAT-0010",
+          "annualDemand": 3218.0,
+          "preferredOption": "Make",
+          "estimatedUnitCost": 36.4,
+          "decisionRationale": "Additive avoids tooling and supports the required low-volume geometry. — Management Review — Management Review"
+        },
+        {
+          "id": "make-buy-additive-review-011",
+          "state": "modeled",
+          "partNumber": "BILLOF-MAT-0011",
+          "annualDemand": 3220.0,
+          "preferredOption": "Buy",
+          "estimatedUnitCost": 38.4,
+          "decisionRationale": "Additive avoids tooling and supports the required low-volume geometry. — Exception Follow-up — Exception Follow-up"
+        },
+        {
+          "id": "make-buy-additive-review-012",
+          "state": "modeled",
+          "partNumber": "BILLOF-MAT-0012",
+          "annualDemand": 3222.0,
+          "preferredOption": "Additive",
+          "estimatedUnitCost": 40.4,
+          "decisionRationale": "Additive avoids tooling and supports the required low-volume geometry. — Evidence Package — Evidence Package"
+        },
+        {
+          "id": "make-buy-additive-review-013",
+          "state": "modeled",
+          "partNumber": "BILLOF-MAT-0013",
+          "annualDemand": 3224.0,
+          "preferredOption": "Make",
+          "estimatedUnitCost": 42.4,
+          "decisionRationale": "Additive avoids tooling and supports the required low-volume geometry. — Planning Cycle — Planning Cycle"
+        },
+        {
+          "id": "make-buy-additive-review-014",
+          "state": "modeled",
+          "partNumber": "BILLOF-MAT-0014",
+          "annualDemand": 3226.0,
+          "preferredOption": "Buy",
+          "estimatedUnitCost": 44.4,
+          "decisionRationale": "Additive avoids tooling and supports the required low-volume geometry. — Performance Review — Performance Review"
+        },
+        {
+          "id": "make-buy-additive-review-015",
+          "state": "modeled",
+          "partNumber": "BILLOF-MAT-0015",
+          "annualDemand": 3228.0,
+          "preferredOption": "Additive",
+          "estimatedUnitCost": 46.4,
+          "decisionRationale": "Additive avoids tooling and supports the required low-volume geometry. — Final Verification — Final Verification"
         }
       ]
     },
@@ -618,13 +1374,139 @@
       ],
       "seeds": [
         {
-          "id": "change-approval-and-release-demo",
+          "id": "change-approval-and-release-001",
           "state": "draft",
-          "changeReference": "ECO-DEMO-017",
-          "affectedRevision": "Rev C",
-          "changeSummary": "Replace the power module and update mounting hardware.",
-          "annualCostImpact": -142000,
+          "changeReference": "BILLOF-MAT-0001",
+          "affectedRevision": "Rev C — North Region — North Region",
+          "changeSummary": "Replace the power module and update mounting hardware. — North Region — North Region",
+          "annualCostImpact": -142000.0,
           "yieldImpactPercent": 1.2
+        },
+        {
+          "id": "change-approval-and-release-002",
+          "state": "draft",
+          "changeReference": "BILLOF-MAT-0002",
+          "affectedRevision": "Rev C — Enterprise Account — Enterprise Account",
+          "changeSummary": "Replace the power module and update mounting hardware. — Enterprise Account — Enterprise Account",
+          "annualCostImpact": -141998.0,
+          "yieldImpactPercent": 3.2
+        },
+        {
+          "id": "change-approval-and-release-003",
+          "state": "draft",
+          "changeReference": "BILLOF-MAT-0003",
+          "affectedRevision": "Rev C — Quarterly Cycle — Quarterly Cycle",
+          "changeSummary": "Replace the power module and update mounting hardware. — Quarterly Cycle — Quarterly Cycle",
+          "annualCostImpact": -141996.0,
+          "yieldImpactPercent": 5.2
+        },
+        {
+          "id": "change-approval-and-release-004",
+          "state": "draft",
+          "changeReference": "BILLOF-MAT-0004",
+          "affectedRevision": "Rev C — Priority Queue — Priority Queue",
+          "changeSummary": "Replace the power module and update mounting hardware. — Priority Queue — Priority Queue",
+          "annualCostImpact": -141994.0,
+          "yieldImpactPercent": 7.2
+        },
+        {
+          "id": "change-approval-and-release-005",
+          "state": "draft",
+          "changeReference": "BILLOF-MAT-0005",
+          "affectedRevision": "Rev C — Operations Review — Operations Review",
+          "changeSummary": "Replace the power module and update mounting hardware. — Operations Review — Operations Review",
+          "annualCostImpact": -141992.0,
+          "yieldImpactPercent": 9.2
+        },
+        {
+          "id": "change-approval-and-release-006",
+          "state": "draft",
+          "changeReference": "BILLOF-MAT-0006",
+          "affectedRevision": "Rev C — Customer Request — Customer Request",
+          "changeSummary": "Replace the power module and update mounting hardware. — Customer Request — Customer Request",
+          "annualCostImpact": -141990.0,
+          "yieldImpactPercent": 11.2
+        },
+        {
+          "id": "change-approval-and-release-007",
+          "state": "draft",
+          "changeReference": "BILLOF-MAT-0007",
+          "affectedRevision": "Rev C — Compliance Check — Compliance Check",
+          "changeSummary": "Replace the power module and update mounting hardware. — Compliance Check — Compliance Check",
+          "annualCostImpact": -141988.0,
+          "yieldImpactPercent": 13.2
+        },
+        {
+          "id": "change-approval-and-release-008",
+          "state": "draft",
+          "changeReference": "BILLOF-MAT-0008",
+          "affectedRevision": "Rev C — Service Window — Service Window",
+          "changeSummary": "Replace the power module and update mounting hardware. — Service Window — Service Window",
+          "annualCostImpact": -141986.0,
+          "yieldImpactPercent": 15.2
+        },
+        {
+          "id": "change-approval-and-release-009",
+          "state": "draft",
+          "changeReference": "BILLOF-MAT-0009",
+          "affectedRevision": "Rev C — Quality Sample — Quality Sample",
+          "changeSummary": "Replace the power module and update mounting hardware. — Quality Sample — Quality Sample",
+          "annualCostImpact": -141984.0,
+          "yieldImpactPercent": 17.2
+        },
+        {
+          "id": "change-approval-and-release-010",
+          "state": "draft",
+          "changeReference": "BILLOF-MAT-0010",
+          "affectedRevision": "Rev C — Management Review — Management Review",
+          "changeSummary": "Replace the power module and update mounting hardware. — Management Review — Management Review",
+          "annualCostImpact": -141982.0,
+          "yieldImpactPercent": 19.2
+        },
+        {
+          "id": "change-approval-and-release-011",
+          "state": "draft",
+          "changeReference": "BILLOF-MAT-0011",
+          "affectedRevision": "Rev C — Exception Follow-up — Exception Follow-up",
+          "changeSummary": "Replace the power module and update mounting hardware. — Exception Follow-up — Exception Follow-up",
+          "annualCostImpact": -141980.0,
+          "yieldImpactPercent": 21.2
+        },
+        {
+          "id": "change-approval-and-release-012",
+          "state": "draft",
+          "changeReference": "BILLOF-MAT-0012",
+          "affectedRevision": "Rev C — Evidence Package — Evidence Package",
+          "changeSummary": "Replace the power module and update mounting hardware. — Evidence Package — Evidence Package",
+          "annualCostImpact": -141978.0,
+          "yieldImpactPercent": 23.2
+        },
+        {
+          "id": "change-approval-and-release-013",
+          "state": "draft",
+          "changeReference": "BILLOF-MAT-0013",
+          "affectedRevision": "Rev C — Planning Cycle — Planning Cycle",
+          "changeSummary": "Replace the power module and update mounting hardware. — Planning Cycle — Planning Cycle",
+          "annualCostImpact": -141976.0,
+          "yieldImpactPercent": 25.2
+        },
+        {
+          "id": "change-approval-and-release-014",
+          "state": "draft",
+          "changeReference": "BILLOF-MAT-0014",
+          "affectedRevision": "Rev C — Performance Review — Performance Review",
+          "changeSummary": "Replace the power module and update mounting hardware. — Performance Review — Performance Review",
+          "annualCostImpact": -141974.0,
+          "yieldImpactPercent": 27.2
+        },
+        {
+          "id": "change-approval-and-release-015",
+          "state": "draft",
+          "changeReference": "BILLOF-MAT-0015",
+          "affectedRevision": "Rev C — Final Verification — Final Verification",
+          "changeSummary": "Replace the power module and update mounting hardware. — Final Verification — Final Verification",
+          "annualCostImpact": -141972.0,
+          "yieldImpactPercent": 29.2
         }
       ]
     },
@@ -725,13 +1607,139 @@
       ],
       "seeds": [
         {
-          "id": "erp-plm-integration-readiness-demo",
+          "id": "erp-plm-integration-readiness-001",
           "state": "inventoried",
-          "integrationType": "PLM",
-          "provider": "Local PLM fixture",
+          "integrationType": "ERP",
+          "provider": "Local PLM fixture — North Region — North Region",
           "environment": "Local fixture",
           "credentialStatus": "Not required for fixture",
           "testResult": "Not run"
+        },
+        {
+          "id": "erp-plm-integration-readiness-002",
+          "state": "inventoried",
+          "integrationType": "PLM",
+          "provider": "Local PLM fixture — Enterprise Account — Enterprise Account",
+          "environment": "Sandbox configuration",
+          "credentialStatus": "Missing",
+          "testResult": "Passed with fixture"
+        },
+        {
+          "id": "erp-plm-integration-readiness-003",
+          "state": "inventoried",
+          "integrationType": "Supplier portal",
+          "provider": "Local PLM fixture — Quarterly Cycle — Quarterly Cycle",
+          "environment": "Production configuration",
+          "credentialStatus": "Stored externally",
+          "testResult": "Failed"
+        },
+        {
+          "id": "erp-plm-integration-readiness-004",
+          "state": "inventoried",
+          "integrationType": "Quality system",
+          "provider": "Local PLM fixture — Priority Queue — Priority Queue",
+          "environment": "Local fixture",
+          "credentialStatus": "Not required for fixture",
+          "testResult": "Blocked"
+        },
+        {
+          "id": "erp-plm-integration-readiness-005",
+          "state": "inventoried",
+          "integrationType": "ERP",
+          "provider": "Local PLM fixture — Operations Review — Operations Review",
+          "environment": "Sandbox configuration",
+          "credentialStatus": "Missing",
+          "testResult": "Not run"
+        },
+        {
+          "id": "erp-plm-integration-readiness-006",
+          "state": "inventoried",
+          "integrationType": "PLM",
+          "provider": "Local PLM fixture — Customer Request — Customer Request",
+          "environment": "Production configuration",
+          "credentialStatus": "Stored externally",
+          "testResult": "Passed with fixture"
+        },
+        {
+          "id": "erp-plm-integration-readiness-007",
+          "state": "inventoried",
+          "integrationType": "Supplier portal",
+          "provider": "Local PLM fixture — Compliance Check — Compliance Check",
+          "environment": "Local fixture",
+          "credentialStatus": "Not required for fixture",
+          "testResult": "Failed"
+        },
+        {
+          "id": "erp-plm-integration-readiness-008",
+          "state": "inventoried",
+          "integrationType": "Quality system",
+          "provider": "Local PLM fixture — Service Window — Service Window",
+          "environment": "Sandbox configuration",
+          "credentialStatus": "Missing",
+          "testResult": "Blocked"
+        },
+        {
+          "id": "erp-plm-integration-readiness-009",
+          "state": "inventoried",
+          "integrationType": "ERP",
+          "provider": "Local PLM fixture — Quality Sample — Quality Sample",
+          "environment": "Production configuration",
+          "credentialStatus": "Stored externally",
+          "testResult": "Not run"
+        },
+        {
+          "id": "erp-plm-integration-readiness-010",
+          "state": "inventoried",
+          "integrationType": "PLM",
+          "provider": "Local PLM fixture — Management Review — Management Review",
+          "environment": "Local fixture",
+          "credentialStatus": "Not required for fixture",
+          "testResult": "Passed with fixture"
+        },
+        {
+          "id": "erp-plm-integration-readiness-011",
+          "state": "inventoried",
+          "integrationType": "Supplier portal",
+          "provider": "Local PLM fixture — Exception Follow-up — Exception Follow-up",
+          "environment": "Sandbox configuration",
+          "credentialStatus": "Missing",
+          "testResult": "Failed"
+        },
+        {
+          "id": "erp-plm-integration-readiness-012",
+          "state": "inventoried",
+          "integrationType": "Quality system",
+          "provider": "Local PLM fixture — Evidence Package — Evidence Package",
+          "environment": "Production configuration",
+          "credentialStatus": "Stored externally",
+          "testResult": "Blocked"
+        },
+        {
+          "id": "erp-plm-integration-readiness-013",
+          "state": "inventoried",
+          "integrationType": "ERP",
+          "provider": "Local PLM fixture — Planning Cycle — Planning Cycle",
+          "environment": "Local fixture",
+          "credentialStatus": "Not required for fixture",
+          "testResult": "Not run"
+        },
+        {
+          "id": "erp-plm-integration-readiness-014",
+          "state": "inventoried",
+          "integrationType": "PLM",
+          "provider": "Local PLM fixture — Performance Review — Performance Review",
+          "environment": "Sandbox configuration",
+          "credentialStatus": "Missing",
+          "testResult": "Passed with fixture"
+        },
+        {
+          "id": "erp-plm-integration-readiness-015",
+          "state": "inventoried",
+          "integrationType": "Supplier portal",
+          "provider": "Local PLM fixture — Final Verification — Final Verification",
+          "environment": "Production configuration",
+          "credentialStatus": "Stored externally",
+          "testResult": "Failed"
         }
       ]
     }
