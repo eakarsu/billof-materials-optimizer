@@ -100,10 +100,12 @@
     "canonicalKey": "agentic generator program",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
-      "/agentic-program-generator"
+      "/agentic-program-generator",
+      "/ai-advanced?tool=agentic-program-generator"
     ],
     "sourceProjects": [
       "AICobotTrainer"
@@ -112,6 +114,13 @@
       "manufacturing-industrial/billof-materials-optimizer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICobotTrainer",
+        "path": "frontend/src/pages/AIAdvancedPage.jsx:170",
+        "route": "/ai-advanced?tool=agentic-program-generator",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      },
       {
         "kind": "api",
         "sourceProject": "AICobotTrainer",
@@ -179,6 +188,32 @@
         "sourceProject": "AICobotTrainer",
         "path": "backend/routes/aiAnomalyDetection.js:132",
         "route": "/ai-analyze",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      }
+    ]
+  },
+  {
+    "name": "AI Anomaly Detection",
+    "canonicalKey": "ai anomaly detection",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/ai-anomaly-detection"
+    ],
+    "sourceProjects": [
+      "AICobotTrainer"
+    ],
+    "consolidatedFromApps": [
+      "manufacturing-industrial/billof-materials-optimizer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICobotTrainer",
+        "path": "frontend/src/features.js:239",
+        "route": "/ai/ai-anomaly-detection",
         "originApp": "manufacturing-industrial/billof-materials-optimizer"
       }
     ]
@@ -264,6 +299,7 @@
     "canonicalKey": "ai insight",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "page"
     ],
     "routes": [
@@ -277,6 +313,13 @@
       "manufacturing-industrial/billof-materials-optimizer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIBillofMaterialsOptimizer",
+        "path": "client/src/pages/AIInsights.jsx:1",
+        "route": "/ai-insights",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      },
       {
         "kind": "page",
         "sourceProject": "AIBillofMaterialsOptimizer",
@@ -331,9 +374,12 @@
     "canonicalKey": "ai job queue",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "navigation"
     ],
-    "routes": [],
+    "routes": [
+      "/role-permissions?tool=ai-jobs"
+    ],
     "sourceProjects": [
       "AISemiconductorFabYieldOptimizer"
     ],
@@ -341,6 +387,13 @@
       "manufacturing-industrial/billof-materials-optimizer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AISemiconductorFabYieldOptimizer",
+        "path": "frontend/src/pages/ProductionModulePage.js:41",
+        "route": "/role-permissions?tool=ai-jobs",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      },
       {
         "kind": "navigation",
         "sourceProject": "AISemiconductorFabYieldOptimizer",
@@ -384,6 +437,84 @@
     ]
   },
   {
+    "name": "AI Motion Planning",
+    "canonicalKey": "ai motion planning",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/ai-motion-planning"
+    ],
+    "sourceProjects": [
+      "AICobotTrainer"
+    ],
+    "consolidatedFromApps": [
+      "manufacturing-industrial/billof-materials-optimizer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICobotTrainer",
+        "path": "frontend/src/features.js:145",
+        "route": "/ai/ai-motion-planning",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      }
+    ]
+  },
+  {
+    "name": "AI Natural Language Programming",
+    "canonicalKey": "ai language natural programming",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/ai-nl-programming"
+    ],
+    "sourceProjects": [
+      "AICobotTrainer"
+    ],
+    "consolidatedFromApps": [
+      "manufacturing-industrial/billof-materials-optimizer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICobotTrainer",
+        "path": "frontend/src/features.js:256",
+        "route": "/ai/ai-nl-programming",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      }
+    ]
+  },
+  {
+    "name": "AI Predictive Maintenance",
+    "canonicalKey": "ai maintenance predictive",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/ai-predictive-maintenance"
+    ],
+    "sourceProjects": [
+      "AICobotTrainer"
+    ],
+    "consolidatedFromApps": [
+      "manufacturing-industrial/billof-materials-optimizer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICobotTrainer",
+        "path": "frontend/src/features.js:274",
+        "route": "/ai/ai-predictive-maintenance",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      }
+    ]
+  },
+  {
     "name": "AI Printing Tools",
     "canonicalKey": "ai printing",
     "aliases": [],
@@ -413,6 +544,32 @@
         "sourceProject": "AI3DPrintingOptimizer",
         "path": "frontend/src/pages/AIPrintingTools.jsx",
         "route": "/AIPrintingTools",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      }
+    ]
+  },
+  {
+    "name": "AI Quality Analysis",
+    "canonicalKey": "ai analysis quality",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/ai-quality-analysis"
+    ],
+    "sourceProjects": [
+      "AICobotTrainer"
+    ],
+    "consolidatedFromApps": [
+      "manufacturing-industrial/billof-materials-optimizer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICobotTrainer",
+        "path": "frontend/src/features.js:164",
+        "route": "/ai/ai-quality-analysis",
         "originApp": "manufacturing-industrial/billof-materials-optimizer"
       }
     ]
@@ -521,6 +678,84 @@
     ]
   },
   {
+    "name": "AI Safety Assessment",
+    "canonicalKey": "ai assessment safety",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/ai-safety-assessment"
+    ],
+    "sourceProjects": [
+      "AICobotTrainer"
+    ],
+    "consolidatedFromApps": [
+      "manufacturing-industrial/billof-materials-optimizer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICobotTrainer",
+        "path": "frontend/src/features.js:182",
+        "route": "/ai/ai-safety-assessment",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      }
+    ]
+  },
+  {
+    "name": "AI Task Optimization",
+    "canonicalKey": "ai optimization task",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/ai-task-optimization"
+    ],
+    "sourceProjects": [
+      "AICobotTrainer"
+    ],
+    "consolidatedFromApps": [
+      "manufacturing-industrial/billof-materials-optimizer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICobotTrainer",
+        "path": "frontend/src/features.js:200",
+        "route": "/ai/ai-task-optimization",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      }
+    ]
+  },
+  {
+    "name": "Alternative Part Sourcing",
+    "canonicalKey": "alternative part sourcing",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/alternatives"
+    ],
+    "sourceProjects": [
+      "AIBillofMaterialsOptimizer"
+    ],
+    "consolidatedFromApps": [
+      "manufacturing-industrial/billof-materials-optimizer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIBillofMaterialsOptimizer",
+        "path": "client/src/pages/AlternativeParts.jsx:1",
+        "route": "/alternatives",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      }
+    ]
+  },
+  {
     "name": "Alternative Parts",
     "canonicalKey": "alternative part",
     "aliases": [],
@@ -582,6 +817,76 @@
         "sourceProject": "AIBillofMaterialsOptimizer",
         "path": "client/src/pages/Dashboard.jsx:12",
         "route": "/alternatives",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      }
+    ]
+  },
+  {
+    "name": "Analyze",
+    "canonicalKey": "analyze",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/ai/analyze",
+      "/analyze"
+    ],
+    "sourceProjects": [
+      "AI3DPrintingOptimizer",
+      "AISemiconductorFabYieldOptimizer"
+    ],
+    "consolidatedFromApps": [
+      "manufacturing-industrial/billof-materials-optimizer"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AI3DPrintingOptimizer",
+        "path": "backend/routes/qualityScores.js:113",
+        "route": "/ai/analyze",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AISemiconductorFabYieldOptimizer",
+        "path": "backend/routes/rootCauseAnalysis.js:59",
+        "route": "/analyze",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      }
+    ]
+  },
+  {
+    "name": "Analyze Image",
+    "canonicalKey": "analyze image",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "api"
+    ],
+    "routes": [
+      "/:id/analyze-image",
+      "/wafer-defects"
+    ],
+    "sourceProjects": [
+      "AISemiconductorFabYieldOptimizer"
+    ],
+    "consolidatedFromApps": [
+      "manufacturing-industrial/billof-materials-optimizer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AISemiconductorFabYieldOptimizer",
+        "path": "frontend/src/pages/WaferDefectsPage.js:1",
+        "route": "/wafer-defects",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AISemiconductorFabYieldOptimizer",
+        "path": "backend/routes/waferDefects.js:166",
+        "route": "/:id/analyze-image",
         "originApp": "manufacturing-industrial/billof-materials-optimizer"
       }
     ]
@@ -1065,6 +1370,32 @@
         "sourceProject": "AIBillofMaterialsOptimizer",
         "path": "server/routes/runtimeAi.js:9",
         "route": "/bom-readiness",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      }
+    ]
+  },
+  {
+    "name": "Bom Version Comparison",
+    "canonicalKey": "bom comparison version",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/bomversions"
+    ],
+    "sourceProjects": [
+      "AIBillofMaterialsOptimizer"
+    ],
+    "consolidatedFromApps": [
+      "manufacturing-industrial/billof-materials-optimizer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIBillofMaterialsOptimizer",
+        "path": "client/src/pages/BomVersions.jsx:1",
+        "route": "/bomversions",
         "originApp": "manufacturing-industrial/billof-materials-optimizer"
       }
     ]
@@ -1766,6 +2097,58 @@
     ]
   },
   {
+    "name": "Compliance Ro Hs Tracking",
+    "canonicalKey": "compliance hs ro tracking",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/compliance"
+    ],
+    "sourceProjects": [
+      "AIBillofMaterialsOptimizer"
+    ],
+    "consolidatedFromApps": [
+      "manufacturing-industrial/billof-materials-optimizer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIBillofMaterialsOptimizer",
+        "path": "client/src/pages/Compliance.jsx:1",
+        "route": "/compliance",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      }
+    ]
+  },
+  {
+    "name": "Component Obsolescence Prediction",
+    "canonicalKey": "component obsolescence prediction",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/obsolescence"
+    ],
+    "sourceProjects": [
+      "AIBillofMaterialsOptimizer"
+    ],
+    "consolidatedFromApps": [
+      "manufacturing-industrial/billof-materials-optimizer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIBillofMaterialsOptimizer",
+        "path": "client/src/pages/ObsolescencePredictions.jsx:1",
+        "route": "/obsolescence",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      }
+    ]
+  },
+  {
     "name": "Cost By Category",
     "canonicalKey": "by category cost",
     "aliases": [],
@@ -1822,10 +2205,12 @@
     "canonicalKey": "analysis cost down",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "page"
     ],
     "routes": [
-      "/CostDownAnalysis"
+      "/CostDownAnalysis",
+      "/costdown"
     ],
     "sourceProjects": [
       "AIBillofMaterialsOptimizer"
@@ -1834,6 +2219,13 @@
       "manufacturing-industrial/billof-materials-optimizer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIBillofMaterialsOptimizer",
+        "path": "client/src/pages/CostDownAnalysis.jsx:1",
+        "route": "/costdown",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      },
       {
         "kind": "page",
         "sourceProject": "AIBillofMaterialsOptimizer",
@@ -1879,6 +2271,32 @@
         "sourceProject": "AIBillofMaterialsOptimizer",
         "path": "client/src/pages/Dashboard.jsx:27",
         "route": "/costdown",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      }
+    ]
+  },
+  {
+    "name": "Cross Model Motion Planner",
+    "canonicalKey": "cross model motion planner",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai-advanced?tool=cross-model-plan"
+    ],
+    "sourceProjects": [
+      "AICobotTrainer"
+    ],
+    "consolidatedFromApps": [
+      "manufacturing-industrial/billof-materials-optimizer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICobotTrainer",
+        "path": "frontend/src/pages/AIAdvancedPage.jsx:105",
+        "route": "/ai-advanced?tool=cross-model-plan",
         "originApp": "manufacturing-industrial/billof-materials-optimizer"
       }
     ]
@@ -2139,9 +2557,11 @@
     "canonicalKey": "cycle estimator time",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-advanced?tool=cycle-time-estimator",
       "/cycle-time-estimator"
     ],
     "sourceProjects": [
@@ -2151,6 +2571,13 @@
       "manufacturing-industrial/billof-materials-optimizer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICobotTrainer",
+        "path": "frontend/src/pages/AIAdvancedPage.jsx:202",
+        "route": "/ai-advanced?tool=cycle-time-estimator",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      },
       {
         "kind": "api",
         "sourceProject": "AICobotTrainer",
@@ -3013,6 +3440,58 @@
         "sourceProject": "AISemiconductorFabYieldOptimizer",
         "path": "frontend/src/pages/FacilitiesPage.js",
         "route": "/FacilitiesPage",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      }
+    ]
+  },
+  {
+    "name": "Failure Prediction",
+    "canonicalKey": "failure prediction",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/failure-predictions"
+    ],
+    "sourceProjects": [
+      "AI3DPrintingOptimizer"
+    ],
+    "consolidatedFromApps": [
+      "manufacturing-industrial/billof-materials-optimizer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AI3DPrintingOptimizer",
+        "path": "frontend/src/config/features.js:67",
+        "route": "/ai/failure-predictions",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      }
+    ]
+  },
+  {
+    "name": "Failure Root Cause Analyzer",
+    "canonicalKey": "analyzer cause failure root",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai-advanced?tool=failure-root-cause"
+    ],
+    "sourceProjects": [
+      "AICobotTrainer"
+    ],
+    "consolidatedFromApps": [
+      "manufacturing-industrial/billof-materials-optimizer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICobotTrainer",
+        "path": "frontend/src/pages/AIAdvancedPage.jsx:191",
+        "route": "/ai-advanced?tool=failure-root-cause",
         "originApp": "manufacturing-industrial/billof-materials-optimizer"
       }
     ]
@@ -4081,22 +4560,30 @@
       "Generate New"
     ],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
       "/:id/generate",
+      "/feature/:featureKey?tool=generate",
+      "/feature/:featureKey?tool=generate-new",
       "/generate",
       "/generate-new"
     ],
     "sourceProjects": [
-      "AIAssemblyLineVisualInspector",
       "AICobotTrainer"
     ],
     "consolidatedFromApps": [
-      "manufacturing-industrial/billof-materials-optimizer",
-      "manufacturing-industrial/visual-qa-inspector"
+      "manufacturing-industrial/billof-materials-optimizer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICobotTrainer",
+        "path": "frontend/src/pages/FeaturePage.jsx:1",
+        "route": "/feature/:featureKey?tool=generate",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      },
       {
         "kind": "api",
         "sourceProject": "AICobotTrainer",
@@ -4154,6 +4641,13 @@
         "originApp": "manufacturing-industrial/billof-materials-optimizer"
       },
       {
+        "kind": "ai-page",
+        "sourceProject": "AICobotTrainer",
+        "path": "frontend/src/pages/FeaturePage.jsx:1",
+        "route": "/feature/:featureKey?tool=generate-new",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      },
+      {
         "kind": "api",
         "sourceProject": "AICobotTrainer",
         "path": "backend/routes/aiAnomalyDetection.js:110",
@@ -4201,13 +4695,6 @@
         "path": "backend/routes/aiTaskOptimization.js:109",
         "route": "/generate-new",
         "originApp": "manufacturing-industrial/billof-materials-optimizer"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIAssemblyLineVisualInspector",
-        "path": "backend/src/routes/reports.js:277",
-        "route": "/generate",
-        "originApp": "manufacturing-industrial/visual-qa-inspector"
       }
     ]
   },
@@ -4898,6 +5385,32 @@
     ]
   },
   {
+    "name": "Inventory Management",
+    "canonicalKey": "inventory",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/inventory"
+    ],
+    "sourceProjects": [
+      "AIBillofMaterialsOptimizer"
+    ],
+    "consolidatedFromApps": [
+      "manufacturing-industrial/billof-materials-optimizer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIBillofMaterialsOptimizer",
+        "path": "client/src/pages/Inventory.jsx:1",
+        "route": "/inventory",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      }
+    ]
+  },
+  {
     "name": "Inventory Value",
     "canonicalKey": "inventory value",
     "aliases": [],
@@ -4954,10 +5467,12 @@
     "canonicalKey": "lead time tracking",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "page"
     ],
     "routes": [
-      "/LeadTimeTracking"
+      "/LeadTimeTracking",
+      "/leadtime"
     ],
     "sourceProjects": [
       "AIBillofMaterialsOptimizer"
@@ -4966,6 +5481,13 @@
       "manufacturing-industrial/billof-materials-optimizer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIBillofMaterialsOptimizer",
+        "path": "client/src/pages/LeadTimeTracking.jsx:1",
+        "route": "/leadtime",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      },
       {
         "kind": "page",
         "sourceProject": "AIBillofMaterialsOptimizer",
@@ -5674,6 +6196,32 @@
     ]
   },
   {
+    "name": "Motion Path Replay",
+    "canonicalKey": "motion path replay",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai-advanced?tool=motion-replay"
+    ],
+    "sourceProjects": [
+      "AICobotTrainer"
+    ],
+    "consolidatedFromApps": [
+      "manufacturing-industrial/billof-materials-optimizer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICobotTrainer",
+        "path": "frontend/src/pages/AIAdvancedPage.jsx:6",
+        "route": "/ai-advanced?tool=motion-replay",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      }
+    ]
+  },
+  {
     "name": "Multi Agent",
     "canonicalKey": "agent multi",
     "aliases": [],
@@ -5830,6 +6378,32 @@
         "sourceProject": "AICobotTrainer",
         "path": "backend/routes/aiAdvanced.js:431",
         "route": "/nl-program-debug",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      }
+    ]
+  },
+  {
+    "name": "Nl Program Debugger",
+    "canonicalKey": "debugger nl program",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai-advanced?tool=nl-program-debug"
+    ],
+    "sourceProjects": [
+      "AICobotTrainer"
+    ],
+    "consolidatedFromApps": [
+      "manufacturing-industrial/billof-materials-optimizer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICobotTrainer",
+        "path": "frontend/src/pages/AIAdvancedPage.jsx:152",
+        "route": "/ai-advanced?tool=nl-program-debug",
         "originApp": "manufacturing-industrial/billof-materials-optimizer"
       }
     ]
@@ -6634,9 +7208,11 @@
     "canonicalKey": "brief operator training",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-advanced?tool=operator-training-brief",
       "/operator-training-brief"
     ],
     "sourceProjects": [
@@ -6646,6 +7222,13 @@
       "manufacturing-industrial/billof-materials-optimizer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICobotTrainer",
+        "path": "frontend/src/pages/AIAdvancedPage.jsx:225",
+        "route": "/ai-advanced?tool=operator-training-brief",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      },
       {
         "kind": "api",
         "sourceProject": "AICobotTrainer",
@@ -6722,24 +7305,22 @@
     "canonicalKey": "optimize",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
       "/:id/optimize",
       "/ai/optimize",
-      "/api/assembly/:id/optimize",
-      "/api/routes/:id/optimize",
+      "/bom?tool=optimize",
       "/optimize"
     ],
     "sourceProjects": [
       "AI3DPrintingOptimizer",
       "AIBillofMaterialsOptimizer",
-      "AIManufacturingOps",
       "AISemiconductorFabYieldOptimizer"
     ],
     "consolidatedFromApps": [
-      "manufacturing-industrial/billof-materials-optimizer",
-      "manufacturing-industrial/visual-qa-inspector"
+      "manufacturing-industrial/billof-materials-optimizer"
     ],
     "evidence": [
       {
@@ -6747,6 +7328,13 @@
         "sourceProject": "AI3DPrintingOptimizer",
         "path": "backend/routes/printParameters.js:111",
         "route": "/ai/optimize",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      },
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIBillofMaterialsOptimizer",
+        "path": "client/src/pages/BomItems.jsx:1",
+        "route": "/bom?tool=optimize",
         "originApp": "manufacturing-industrial/billof-materials-optimizer"
       },
       {
@@ -6769,20 +7357,6 @@
         "path": "backend/routes/processRecipes.js:59",
         "route": "/:id/optimize",
         "originApp": "manufacturing-industrial/billof-materials-optimizer"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIManufacturingOps",
-        "path": "backend/src/index.js:1109",
-        "route": "/api/assembly/:id/optimize",
-        "originApp": "manufacturing-industrial/visual-qa-inspector"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIManufacturingOps",
-        "path": "backend/src/index.js:890",
-        "route": "/api/routes/:id/optimize",
-        "originApp": "manufacturing-industrial/visual-qa-inspector"
       }
     ]
   },
@@ -6971,6 +7545,32 @@
         "path": "backend/src/index.js:981",
         "route": "/api/safety/:id/predict",
         "originApp": "manufacturing-industrial/visual-qa-inspector"
+      }
+    ]
+  },
+  {
+    "name": "Predictive Maintenance Scheduler",
+    "canonicalKey": "maintenance predictive scheduler",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai-advanced?tool=predictive-schedule"
+    ],
+    "sourceProjects": [
+      "AICobotTrainer"
+    ],
+    "consolidatedFromApps": [
+      "manufacturing-industrial/billof-materials-optimizer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICobotTrainer",
+        "path": "frontend/src/pages/AIAdvancedPage.jsx:89",
+        "route": "/ai-advanced?tool=predictive-schedule",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
       }
     ]
   },
@@ -7395,6 +7995,32 @@
     ]
   },
   {
+    "name": "Quality Checkpoint Auto Designer",
+    "canonicalKey": "auto checkpoint designer quality",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai-advanced?tool=quality-checkpoint-design"
+    ],
+    "sourceProjects": [
+      "AICobotTrainer"
+    ],
+    "consolidatedFromApps": [
+      "manufacturing-industrial/billof-materials-optimizer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICobotTrainer",
+        "path": "frontend/src/pages/AIAdvancedPage.jsx:130",
+        "route": "/ai-advanced?tool=quality-checkpoint-design",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      }
+    ]
+  },
+  {
     "name": "Quality Checkpoint Design",
     "canonicalKey": "checkpoint design quality",
     "aliases": [],
@@ -7792,10 +8418,12 @@
     "canonicalKey": "recommend",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
       "/ai/recommend",
+      "/process-recipes",
       "/recommend"
     ],
     "sourceProjects": [
@@ -7811,6 +8439,13 @@
         "sourceProject": "AI3DPrintingOptimizer",
         "path": "backend/routes/materialSelections.js:109",
         "route": "/ai/recommend",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      },
+      {
+        "kind": "ai-page",
+        "sourceProject": "AISemiconductorFabYieldOptimizer",
+        "path": "frontend/src/pages/ProcessRecipesPage.js:1",
+        "route": "/process-recipes",
         "originApp": "manufacturing-industrial/billof-materials-optimizer"
       },
       {
@@ -8009,10 +8644,12 @@
     "canonicalKey": "assessment risk",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "page"
     ],
     "routes": [
-      "/RiskAssessment"
+      "/RiskAssessment",
+      "/risks"
     ],
     "sourceProjects": [
       "AIBillofMaterialsOptimizer"
@@ -8021,6 +8658,13 @@
       "manufacturing-industrial/billof-materials-optimizer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIBillofMaterialsOptimizer",
+        "path": "client/src/pages/RiskAssessment.jsx:1",
+        "route": "/risks",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      },
       {
         "kind": "page",
         "sourceProject": "AIBillofMaterialsOptimizer",
@@ -8177,6 +8821,32 @@
         "sourceProject": "AISemiconductorFabYieldOptimizer",
         "path": "frontend/src/components/SidebarLayout.js:55",
         "route": "/role-permissions",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      }
+    ]
+  },
+  {
+    "name": "Root Cause Analyses",
+    "canonicalKey": "analyse cause root",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/root-cause-analysis"
+    ],
+    "sourceProjects": [
+      "AISemiconductorFabYieldOptimizer"
+    ],
+    "consolidatedFromApps": [
+      "manufacturing-industrial/billof-materials-optimizer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AISemiconductorFabYieldOptimizer",
+        "path": "frontend/src/pages/RootCauseAnalysisPage.js:1",
+        "route": "/root-cause-analysis",
         "originApp": "manufacturing-industrial/billof-materials-optimizer"
       }
     ]
@@ -8898,6 +9568,32 @@
     ]
   },
   {
+    "name": "Safety Boundary Auto Generator",
+    "canonicalKey": "auto boundary generator safety",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai-advanced?tool=safety-boundary-auto"
+    ],
+    "sourceProjects": [
+      "AICobotTrainer"
+    ],
+    "consolidatedFromApps": [
+      "manufacturing-industrial/billof-materials-optimizer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICobotTrainer",
+        "path": "frontend/src/pages/AIAdvancedPage.jsx:47",
+        "route": "/ai-advanced?tool=safety-boundary-auto",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      }
+    ]
+  },
+  {
     "name": "Savings Opportunities",
     "canonicalKey": "opportunity saving",
     "aliases": [],
@@ -9246,6 +9942,32 @@
     ]
   },
   {
+    "name": "Supplier Management",
+    "canonicalKey": "supplier",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/suppliers"
+    ],
+    "sourceProjects": [
+      "AIBillofMaterialsOptimizer"
+    ],
+    "consolidatedFromApps": [
+      "manufacturing-industrial/billof-materials-optimizer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIBillofMaterialsOptimizer",
+        "path": "client/src/pages/Suppliers.jsx:1",
+        "route": "/suppliers",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      }
+    ]
+  },
+  {
     "name": "Supplier Pcn Impact Matrix",
     "canonicalKey": "impact matrix pcn supplier",
     "aliases": [],
@@ -9444,6 +10166,32 @@
         "sourceProject": "AICobotTrainer",
         "path": "backend/routes/aiAdvanced.js:131",
         "route": "/task-batch",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      }
+    ]
+  },
+  {
+    "name": "Task Optimisation Batch",
+    "canonicalKey": "batch optimisation task",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai-advanced?tool=task-batch"
+    ],
+    "sourceProjects": [
+      "AICobotTrainer"
+    ],
+    "consolidatedFromApps": [
+      "manufacturing-industrial/billof-materials-optimizer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICobotTrainer",
+        "path": "frontend/src/pages/AIAdvancedPage.jsx:23",
+        "route": "/ai-advanced?tool=task-batch",
         "originApp": "manufacturing-industrial/billof-materials-optimizer"
       }
     ]
@@ -10405,15 +11153,13 @@
   {
     "name": "Yield Predictions",
     "canonicalKey": "prediction yield",
-    "aliases": [
-      "Yield Predictions Page"
-    ],
+    "aliases": [],
     "kinds": [
+      "ai-page",
       "navigation",
       "page"
     ],
     "routes": [
-      "/YieldPredictionsPage",
       "/yield-predictions"
     ],
     "sourceProjects": [
@@ -10423,6 +11169,13 @@
       "manufacturing-industrial/billof-materials-optimizer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AISemiconductorFabYieldOptimizer",
+        "path": "frontend/src/pages/YieldPredictionsPage.js:1",
+        "route": "/yield-predictions",
+        "originApp": "manufacturing-industrial/billof-materials-optimizer"
+      },
       {
         "kind": "navigation",
         "sourceProject": "AISemiconductorFabYieldOptimizer",
@@ -10450,7 +11203,26 @@
         "path": "frontend/src/pages/Dashboard.js:13",
         "route": "/yield-predictions",
         "originApp": "manufacturing-industrial/billof-materials-optimizer"
-      },
+      }
+    ]
+  },
+  {
+    "name": "Yield Predictions Page",
+    "canonicalKey": "prediction yield",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/YieldPredictionsPage"
+    ],
+    "sourceProjects": [
+      "AISemiconductorFabYieldOptimizer"
+    ],
+    "consolidatedFromApps": [
+      "manufacturing-industrial/billof-materials-optimizer"
+    ],
+    "evidence": [
       {
         "kind": "page",
         "sourceProject": "AISemiconductorFabYieldOptimizer",
