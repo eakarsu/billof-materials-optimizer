@@ -3,7 +3,7 @@
 Industry: **Manufacturing & Industrial**  
 Specialization: **Billof Materials Optimizer**
 
-This standalone application consolidates source-backed capabilities into 288 optimized features, including 49 visible data-backed or AI-enabled views. Its public demo SQLite database contains 165 sanitized source rows across 11 imported tables and 120 operational workflow records.
+This standalone application consolidates source-backed capabilities into 288 optimized features, including all 288 source-backed feature views. Its public demo SQLite database contains 165 sanitized source rows across 11 imported tables and 120 operational workflow records.
 
 ## Run locally
 
